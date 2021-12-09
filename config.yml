@@ -1,0 +1,19 @@
+title: Cloud Computing
+description: >-
+  This couse give the broad overview of the cloud computing. It gives an overall
+  picture about what is cloud computing, What are the components of cloud
+  computing and what are the recent trends.
+template:
+  repo: cloud-computing-template
+  name: cloud-computing
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
